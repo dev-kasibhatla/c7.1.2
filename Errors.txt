@@ -1,0 +1,36 @@
+Build errors i encountered. Solved many. Pasting unsolved on the agenda:
+
+LOCAL_MODULE: libtime_genoff
+PRODUCT_COPY_FILES device/generic/goldfish/data/etc/apns-conf.xml:system/etc/apns-conf.xml ignored.
+No private recovery resources for TARGET_DEVICE black
+No recovery.fstab for TARGET_DEVICE black
+build/core/Makefile:49: warning: overriding commands for target `/home/dev-k/candy/out/target/product/black/system/etc/mkshrc'
+build/core/base_rules.mk:317: warning: ignoring old commands for target `/home/dev-k/candy/out/target/product/black/system/etc/mkshrc'
+build/core/Makefile:49: warning: overriding commands for target `/home/dev-k/candy/out/target/product/black/system/lib/libcamera_client.so'
+build/core/base_rules.mk:317: warning: ignoring old commands for target `/home/dev-k/candy/out/target/product/black/system/lib/libcamera_client.so'
+build/core/Makefile:49: warning: overriding commands for target `/home/dev-k/candy/out/target/product/black/system/lib64/libcamera_client.so'
+build/core/base_rules.mk:317: warning: ignoring old commands for target `/home/dev-k/candy/out/target/product/black/system/lib64/libcamera_client.so'
+build/core/Makefile:49: warning: overriding commands for target `/home/dev-k/candy/out/target/product/black/system/lib/libsensorservice.so'
+build/core/base_rules.mk:317: warning: ignoring old commands for target `/home/dev-k/candy/out/target/product/black/system/lib/libsensorservice.so'
+build/core/Makefile:49: warning: overriding commands for target `/home/dev-k/candy/out/target/product/black/system/lib64/libsensorservice.so'
+build/core/base_rules.mk:317: warning: ignoring old commands for target `/home/dev-k/candy/out/target/product/black/system/lib64/libsensorservice.so'
+build/core/Makefile:49: warning: overriding commands for target `/home/dev-k/candy/out/target/product/black/system/lib64/hw/audio.primary.msm8916.so'
+build/core/base_rules.mk:317: warning: ignoring old commands for target `/home/dev-k/candy/out/target/product/black/system/lib64/hw/audio.primary.msm8916.so'
+build/core/Makefile:49: warning: overriding commands for target `/home/dev-k/candy/out/target/product/black/system/lib/hw/audio.primary.msm8916.so'
+build/core/base_rules.mk:317: warning: ignoring old commands for target `/home/dev-k/candy/out/target/product/black/system/lib/hw/audio.primary.msm8916.so'
+build/core/Makefile:49: warning: overriding commands for target `/home/dev-k/candy/out/target/product/black/system/lib64/libcnefeatureconfig.so'
+build/core/base_rules.mk:317: warning: ignoring old commands for target `/home/dev-k/candy/out/target/product/black/system/lib64/libcnefeatureconfig.so'
+build/core/Makefile:49: warning: overriding commands for target `/home/dev-k/candy/out/target/product/black/system/lib64/librmnetctl.so'
+build/core/base_rules.mk:317: warning: ignoring old commands for target `/home/dev-k/candy/out/target/product/black/system/lib64/librmnetctl.so'
+build/core/Makefile:49: warning: overriding commands for target `/home/dev-k/candy/out/target/product/black/system/lib/libminui.so'
+build/core/base_rules.mk:317: warning: ignoring old commands for target `/home/dev-k/candy/out/target/product/black/system/lib/libminui.so'
+build/core/Makefile:49: warning: overriding commands for target `/home/dev-k/candy/out/target/product/black/system/lib64/libminui.so'
+build/core/base_rules.mk:317: warning: ignoring old commands for target `/home/dev-k/candy/out/target/product/black/system/lib64/libminui.so'
+build/core/tasks/kernel.mk:372: warning: overriding commands for target `/home/dev-k/candy/out/target/product/black/kernel'
+build/core/Makefile:49: warning: ignoring old commands for target `/home/dev-k/candy/out/target/product/black/kernel'
+Starting build with ninja
+ninja: Entering directory `.'
+ninja: error: unknown target 'candy', did you mean 'aidl'?
+build/core/ninja.mk:158: recipe for target 'ninja_wrapper' failed
+make: *** [ninja_wrapper] Error 1
+make: Leaving directory '/home/dev-k/candy'
