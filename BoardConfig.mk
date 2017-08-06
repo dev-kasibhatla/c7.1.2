@@ -8,6 +8,7 @@ include device/cyanogen/msm8916-common/BoardConfigCommon.mk
 androidboot.bootdevice=soc.0  earlyprintk 
 androidboot.selinux=permissive
 
+#TARGET_BOARD_PLATFORM_VARIANT := msm8916
 #kernel
 BOARD_KERNEL_IMAGE_NAME := Image
 TARGET_KERNEL_SOURCE := kernel/xolo/black
@@ -15,7 +16,7 @@ TARGET_KERNEL_ARCH := arm64
 #TARGET_KERNEL_CROSS_COMPILE_PREFIX := aarch64-linux-android-
 TARGET_KERNEL_HEADER_ARCH := arm64
 TARGET_USES_UNCOMPRESSED_KERNEL := true
-#TARGET_KERNEL_CONFIG := mirageplus01a_msm_defconfig
+TARGET_KERNEL_CONFIG := mirageplus01a_msm_defconfig
 
 
 # fix this up by examining /proc/mtd on a running device
@@ -29,6 +30,13 @@ BOARD_FLASH_BLOCK_SIZE := 131072
 
 BOARD_HAS_NO_SELECT_BUTTON := true
 
+# twrp
+#RECOVERY_VARIANT := twrp
+#TW_THEME:= portrait_hdpi
+#RECOVERY_SDCARD_ON_DATA:= true
+
 
 # SELinux
 BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
+
+
