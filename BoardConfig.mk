@@ -35,7 +35,7 @@ BOARD_HAS_NO_SELECT_BUTTON := true
 #TW_THEME:= portrait_hdpi
 #RECOVERY_SDCARD_ON_DATA:= true
 
-
+TARGET_RECOVERY_FSTAB := $(LOCAL_PATH)/recovery/recovery.fstab
 # SELinux
 BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
 
