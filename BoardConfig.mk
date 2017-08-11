@@ -1,14 +1,19 @@
 USE_CAMERA_STUB := true
 
-include device/cyanogen/msm8916-common/BoardConfigCommon.mk
+#include device/cyanogen/msm8916-common/BoardConfigCommon.mk
 # inherit from the proprietary version
 -include vendor/xolo/black/BoardConfigVendor.mk
 #bootloader
 
+VENDOR_PATH := device/xolo/black
+# Include board config fragments
+include $(VENDOR_PATH)/board/*.mk
+
+
 androidboot.bootdevice=soc.0  earlyprintk 
 androidboot.selinux=permissive
 
-#TARGET_BOARD_PLATFORM_VARIANT := msm8916
+TARGET_BOARD_PLATFORM_VARIANT := msm8916
 #kernel
 BOARD_KERNEL_IMAGE_NAME := Image
 TARGET_KERNEL_SOURCE := kernel/xolo/black
@@ -33,10 +38,10 @@ BOARD_HAS_NO_SELECT_BUTTON := true
 # twrp
 #RECOVERY_VARIANT := twrp
 #TW_THEME:= portrait_hdpi
-#RECOVERY_SDCARD_ON_DATA:= true
+RECOVERY_SDCARD_ON_DATA:= true
 
 
 # SELinux
-BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
+#BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
 
 

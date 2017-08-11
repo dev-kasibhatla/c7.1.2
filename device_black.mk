@@ -9,7 +9,7 @@ DEVICE_PACKAGE_OVERLAYS += device/xolo/black/overlay
 
 
 ifeq ($(TARGET_PREBUILT_KERNEL),)
-	LOCAL_KERNEL := device/xolo/black/prebuilt/kernel
+	LOCAL_KERNEL := device/xolo/black/kernel
 else
 	LOCAL_KERNEL := $(TARGET_PREBUILT_KERNEL)
 endif
@@ -21,5 +21,5 @@ PRODUCT_COPY_FILES += \
 $(call inherit-product, build/target/product/full.mk)
 
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
-PRODUCT_NAME := full_black
+PRODUCT_NAME := candy_black
 PRODUCT_DEVICE := black
