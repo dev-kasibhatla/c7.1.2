@@ -7,6 +7,11 @@ $(call inherit-product-if-exists, vendor/xolo/black/black-vendor.mk)
 
 DEVICE_PACKAGE_OVERLAYS += device/xolo/black/overlay
 
+# Screen density
+PRODUCT_AAPT_PREF_CONFIG := xxhdpi
+
+
+
 
 ifeq ($(TARGET_PREBUILT_KERNEL),)
 	LOCAL_KERNEL := device/xolo/black/kernel
